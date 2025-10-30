@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doko Trainer - Deine digitale Trainings-App für Doppelkopf</title>
+
+    <!-- Meta: Social/SEO (optional erweitern) -->
+    <meta name="description" content="Doko Trainer – Deine digitale Trainings-App für Doppelkopf: Übungshände generieren, sortieren, exportieren und teilen." />
+    <meta property="og:title" content="Doko Trainer – Doppelkopf trainieren" />
+    <meta property="og:description" content="Generiere zufällige Hände nach Regeln, speichere Übungen, exportiere Sammlungen und trainiere gezielt." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0d5c0d" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+</head>
+<body>
+    <section class="hero">
+        <div class="floating-cards" aria-hidden="true">
+            <div class="card-symbol">🃏</div>
+            <div class="card-symbol">♦️</div>
+            <div class="card-symbol">♠️</div>
+            <div class="card-symbol">♥️</div>
+        </div>
+        <canvas id="canvas3d" class="canvas-container" aria-hidden="true"></canvas>
+        <div class="hero-content">
+            <h1 class="logo">🃏 DOKO TRAINER</h1>
+            <p class="tagline">Deine digitale Trainings-App für Doppelkopf</p>
+            <a href="#features" class="cta-button">Jetzt starten</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2 class="section-title">Dein persönlicher Trainingspartner</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">⚙️</div>
+                <h3 class="feature-title">Constraint-System</h3>
+                <p class="feature-description">Generiere zufällige Hände nach deinen eigenen Regeln. Definiere Trümpfe, Damen, Buben, Asse und mehr - perfekt für gezieltes Training!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">💾</div>
+                <h3 class="feature-title">Speichern & Organisieren</h3>
+                <p class="feature-description">Verwalte deine Übungen mit Namen, Kategorien und Schwierigkeitsgraden. Filtere und finde schnell die passende Trainingssituation.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">📤</div>
+                <h3 class="feature-title">Import & Export</h3>
+                <p class="feature-description">Teile deine Übungssammlungen per CSV-Export mit anderen Spielern oder erstelle Backups deiner Trainingsmaterialien.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🔄</div>
+                <h3 class="feature-title">Intelligente Sortierung</h3>
+                <p class="feature-description">Automatische Kartensortierung nach Normalspiel, Damensolo, Bubensolo oder Fleischloser - immer perfekt organisiert.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🎯</div>
+                <h3 class="feature-title">Seed-Generator</h3>
+                <p class="feature-description">Reproduzierbare Zufallshände für Trainingsgruppen - alle üben mit den gleichen Karten!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">📱</div>
+                <h3 class="feature-title">Überall verfügbar</h3>
+                <p class="feature-description">Läuft direkt im Browser, keine Installation nötig. Funktioniert auch offline nach dem ersten Laden.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="modes-section">
+        <h2 class="section-title">Drei flexible Spielmodi</h2>
+        <div class="modes-container">
+            <div class="mode-card">
+                <div class="mode-icon" aria-hidden="true">🂡</div>
+                <div class="mode-content">
+                    <h3>Handmodus</h3>
+                    <p>Der Klassiker mit 12 Karten! Perfekt zum Trainieren von Spielsituationen, Ansagen und Trumpfverteilungen.</p>
+                </div>
+            </div>
+            <div class="mode-card">
+                <div class="mode-icon" aria-hidden="true">🂮</div>
+                <div class="mode-content">
+                    <h3>Stichmodus</h3>
+                    <p>Bis zu vier komplette Stiche mit je 4 Karten. Ideal für Stichlogik, Bedienen, Stechen und komplexe Spielverläufe.</p>
+                </div>
+            </div>
+            <div class="mode-card">
+                <div class="mode-icon" aria-hidden="true">🎴</div>
+                <div class="mode-content">
+                    <h3>Whiteboard</h3>
+                    <p>Maximale Flexibilität! Platziere beliebig viele Karten für individuelle Szenarien, Erklärungen und kreative Experimente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Für jeden Spielertyp</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🎓</div>
+                <h3 class="feature-title">Anfänger</h3>
+                <p class="feature-description">Lerne Kartenwerte, Trümpfe und grundlegende Spielsituationen kennen. Verstehe die verschiedenen Spieltypen.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🎯</div>
+                <h3 class="feature-title">Fortgeschrittene</h3>
+                <p class="feature-description">Trainiere spezifische Situationen, verbessere dein Ansageverhalten und analysiere komplexe Stichverläufe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">👨‍🏫</div>
+                <h3 class="feature-title">Trainer</h3>
+                <p class="feature-description">Erstelle Übungssammlungen für Kurse, stelle typische Situationen nach und teile Trainingsmaterial.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" aria-hidden="true">👥</div>
+                <h3 class="feature-title">Spielgruppen</h3>
+                <p class="feature-description">Diskutiert knifflige Hände gemeinsam, nutzt den Seed-Generator und sammelt interessante Spielsituationen.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 style="margin-bottom: 1rem;">Werde zum Doppelkopf-Profi! 🏆</h2>
+            <p style="margin-bottom: 2rem;">Ob systematisches Training, neue Strategien oder Spielsituationen nachstellen - der Doko Trainer bietet dir alle Werkzeuge, die du brauchst.</p>
+            <a href="#" class="cta-button">App jetzt nutzen</a>
+            <div class="keywords">
+                Doppelkopf Trainer • Doppelkopf Online • Doppelkopf üben • Kartenspiel Training • Doppelkopf Strategie • Doppelkopf lernen
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
